@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>JS1 HTML</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>Calculator</h1>
 
     <div class="calculator-container">
         <div class="display">
-            <input type="text" id="display"/>
+            <div id="display"> </div>
 
         </div>
         <div class="buttons">
-            <button class="btn" onclick="invokeCommand('0')">0</button>
-            <button class="btn" onclick="invokeCommand('1')">1</button>
-            <button class="btn" onclick="invokeCommand('2')">2</button>
-            <button class="btn" onclick="invokeCommand('3')">3</button>
-            <button class="btn" onclick="invokeCommand('4')">4</button>
-            <button class="btn" onclick="invokeCommand('5')">5</button>
-            <button class="btn" onclick="invokeCommand('6')">6</button>
-            <button class="btn" onclick="invokeCommand('7')">7</button>
-            <button class="btn" onclick="invokeCommand('8')">8</button>
-            <button class="btn" onclick="invokeCommand('9')">9</button>
-            <button class="btn" onclick="invokeCommand('+')">+</button>
-            <button class="btn" onclick="invokeCommand('-')">-</button>
-            <button class="btn" onclick="invokeCommand('*')">*</button>
-            <button class="btn" onclick="invokeCommand('/')">/</button>
-            <button class="btn" onclick="invokeCommand('=')">=</button>
-
-
-
-
-
-
+            <div class="row">
+                <button class="btn btn-stretch" onclick="invokeCommand('C')">C</button>
+                <button class="btn btn-primary" onclick="invokeCommand('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="invokeCommand('7')">7</button>
+                <button class="btn" onclick="invokeCommand('8')">8</button>
+                <button class="btn" onclick="invokeCommand('9')">9</button>
+                <button class="btn btn-primary" onclick="invokeCommand('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="invokeCommand('4')">4</button>
+                <button class="btn" onclick="invokeCommand('5')">5</button>
+                <button class="btn" onclick="invokeCommand('6')">6</button>
+                <button class="btn btn-primary" onclick="invokeCommand('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="invokeCommand('1')">1</button>
+                <button class="btn" onclick="invokeCommand('2')">2</button>
+                <button class="btn" onclick="invokeCommand('3')">3</button>
+                <button class="btn btn-primary" onclick="invokeCommand('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-stretch" onclick="invokeCommand('0')">0</button>
+                <button class="btn btn-primary" onclick="invokeCommand('=')">=</button>
+            </div>
         </div>
 
     </div>

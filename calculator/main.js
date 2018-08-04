@@ -3,8 +3,8 @@ let operators = ['+', '-', '/', '*'];
 function invokeCommand(command) {
     let display = document.getElementById('display');
     if (command === '=') {
-        let result = calculate(display.value);
-        display.value = result ;
+        let result = calculate(display.textContent);
+        display.textContent= result ;
 
     } else {
         displayValue(command, display);
@@ -14,14 +14,14 @@ function invokeCommand(command) {
 
 
 function displayValue(value, display) {
-    let lastCurrentChart = display.value[display.value.length -1];
+    let lastCurrentChart = display.textContent[display.textContent.length -1];
     if (operators.includes(value) && operators.includes(lastCurrentChart)) {
         if (value !== lastCurrentChart) {
-           display.value =  display.value.slice(0, -1) + value;
+           display.textContent =  display.textContent.slice(0, -1) + value;
         }
         return;
     }
-    display.value += value;
+    display.textContent += value;
 
 
 }
