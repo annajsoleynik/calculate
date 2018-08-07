@@ -15,30 +15,30 @@
         </div>
         <div class="buttons">
             <div class="row">
-                <button class="btn btn-stretch" onclick="invokeCommand('C')">C</button>
-                <button class="btn btn-primary" onclick="invokeCommand('/')">/</button>
+                <button class="btn btn-stretch" onclick="clearDisplay()">C</button>
+                <button class="btn btn-primary" onclick="addOperation('/')">/</button>
             </div>
             <div class="row">
-                <button class="btn" onclick="invokeCommand('7')">7</button>
-                <button class="btn" onclick="invokeCommand('8')">8</button>
-                <button class="btn" onclick="invokeCommand('9')">9</button>
-                <button class="btn btn-primary" onclick="invokeCommand('*')">*</button>
+                <button class="btn" onclick="addNumber('7')">7</button>
+                <button class="btn" onclick="addNumber('8')">8</button>
+                <button class="btn" onclick="addNumber('9')">9</button>
+                <button class="btn btn-primary" onclick="addOperation('*')">*</button>
             </div>
             <div class="row">
-                <button class="btn" onclick="invokeCommand('4')">4</button>
-                <button class="btn" onclick="invokeCommand('5')">5</button>
-                <button class="btn" onclick="invokeCommand('6')">6</button>
-                <button class="btn btn-primary" onclick="invokeCommand('-')">-</button>
+                <button class="btn" onclick="addNumber('4')">4</button>
+                <button class="btn" onclick="addNumber('5')">5</button>
+                <button class="btn" onclick="addNumber('6')">6</button>
+                <button class="btn btn-primary" onclick="addOperation('-')">-</button>
             </div>
             <div class="row">
-                <button class="btn" onclick="invokeCommand('1')">1</button>
-                <button class="btn" onclick="invokeCommand('2')">2</button>
-                <button class="btn" onclick="invokeCommand('3')">3</button>
-                <button class="btn btn-primary" onclick="invokeCommand('+')">+</button>
+                <button class="btn" onclick="addNumber('1')">1</button>
+                <button class="btn" onclick="addNumber('2')">2</button>
+                <button class="btn" onclick="addNumber('3')">3</button>
+                <button class="btn btn-primary" onclick="addOperation('+')">+</button>
             </div>
             <div class="row">
-                <button class="btn btn-stretch" onclick="invokeCommand('0')">0</button>
-                <button class="btn btn-primary" onclick="invokeCommand('=')">=</button>
+                <button class="btn btn-stretch" onclick="addNumber('0')">0</button>
+                <button class="btn btn-primary" onclick="calculate()">=</button>
             </div>
         </div>
 
